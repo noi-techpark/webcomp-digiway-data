@@ -1,51 +1,50 @@
 # webcomp-digiway-data
 
-Repository for the new Webcomponent to Display Digiway Data.
-Note:
-Please pass to all calls done on Opendatahub a parameter with 'origin=webcomp-digiway-data'
+Repository for the new Webcomponent to Display Digiway Data.  
+Note: Please pass to all calls done to any Open Data Hub Api a parameter with 'origin=webcomp-digiway-data'
 
 Old webcomponent can be found here
 https://webcomponents.opendatahub.testingmachine.eu/webcomponent/digiway-data-map
 
-Datasets to display
+## Datasets to display
 
---Content Api
+### Content Api
 
--Source: 'civis.geoserver'
- -cyclewaystyrol (Cycleways of North Tyrol)
- -hikingtrails  (HikingTrails of South Tyrol)
- -intermunicipalcyclingroutes (Intermunicipality Cycling Routes of South Tyrol)
- -mountainbikeroutes (MountainbikeRoutes of South Tyrol)
+#### Source: 'civis.geoserver'
+ - cyclewaystyrol (Cycleways of North Tyrol)
+ - hikingtrails  (HikingTrails of South Tyrol)
+ - intermunicipalcyclingroutes (Intermunicipality Cycling Routes of South Tyrol)
+ - mountainbikeroutes (MountainbikeRoutes of South Tyrol)
  
--Source: 'siat.provincia.tn.it'
- -elementi_cicloviari_v (CyclingRoutes of Trento)
- -mtb_percorsi_v (MountainbikeRoutes of Trento)
- -sentieri_della_sat (HikingTrails of Trento)
+#### Source: 'siat.provincia.tn.it'
+ - elementi_cicloviari_v (CyclingRoutes of Trento)
+ - mtb_percorsi_v (MountainbikeRoutes of Trento)
+ - sentieri_della_sat (HikingTrails of Trento)
 
--Source: 'dservices3.arcgis.com'
- -accessibletrails_austria (Hikingtrails of Austria (Accessible))
- -hikintrail_e5 (HikingTrail E5) 
- -radrouten_tirol (Cycleways of North Tyrol)
+#### Source: 'dservices3.arcgis.com'
+ - accessibletrails_austria (Hikingtrails of Austria (Accessible))
+ - hikintrail_e5 (HikingTrail E5) 
+ - radrouten_tirol (Cycleways of North Tyrol)
 
--Source: 'digiway.zoho'
- -Announcements (Trail Closures of Trento)
+#### Source: 'digiway.zoho'
+ - Announcements (Trail Closures of Trento)
 
--Source: 'Province BZ'
- -Weatherforecast of South Tyrol
+#### Source: 'Province BZ'
+ - Weatherforecast of South Tyrol
 
---TimeSeries Api
+### TimeSeries Api
 
--Source: 'PeopleCounter'
-  -Sensor Peoplecounter
+#### Source: 'PeopleCounter'
+  - Sensor Peoplecounter
 
 ## Content REST Api
 
 List Call:
-https://tourism.api.opendatahub.testingmachine.eu/v1/ODHActivityPoi?source=civis.geoserver
-https://tourism.api.opendatahub.testingmachine.eu/v1/ODHActivityPoi?source=siat.provincia.tn.it
-https://tourism.api.opendatahub.testingmachine.eu/v1/ODHActivityPoi?source=dservices3.arcgis.com
-https://tourism.api.opendatahub.testingmachine.eu/v1/Announcement?source=digiway.zoho
-
+'https://tourism.api.opendatahub.testingmachine.eu/v1/ODHActivityPoi?source=civis.geoserver'  
+'https://tourism.api.opendatahub.testingmachine.eu/v1/ODHActivityPoi?source=siat.provincia.tn.it'  
+'https://tourism.api.opendatahub.testingmachine.eu/v1/ODHActivityPoi?source=dservices3.arcgis.com'  
+'https://tourism.api.opendatahub.testingmachine.eu/v1/Announcement?source=digiway.zoho'  
+  
 The REST Api Endpoints gives GPS Points for each requested resource. 
 If there are Geometries available they are listed in
 '''javascript
