@@ -29,6 +29,9 @@ https://webcomponents.opendatahub.testingmachine.eu/webcomponent/digiway-data-ma
 #### Source: 'digiway.zoho'
  - Announcements (Trail Closures of Trento)
 
+#### Source: 'tirol.mapservices.eu'
+ - Announcements (Trail Closures of Austria)
+
 #### Source: 'Province BZ'
  - Weatherforecast of South Tyrol
 
@@ -47,8 +50,10 @@ Get SIAT TN Data
 `https://tourism.api.opendatahub.testingmachine.eu/v1/ODHActivityPoi?source=siat.provincia.tn.it`  
 GET DSERVICES3 ARCGIS Data  
 `https://tourism.api.opendatahub.testingmachine.eu/v1/ODHActivityPoi?source=dservices3.arcgis.com`  
-GET Announcements  
+GET Announcements Trento
 `https://tourism.api.opendatahub.testingmachine.eu/v1/Announcement?source=digiway.zoho`  
+GET Announcements Austria
+`https://tourism.api.opendatahub.testingmachine.eu/v1/Announcement?source=tirol.mapservices.eu`  
   
 The REST Api Endpoints gives GPS Points for each requested resource.  
 If there are Geometries available they are listed in
